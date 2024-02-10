@@ -1,0 +1,77 @@
+header {
+    display: grid; 
+    grid-template-columns: 1fr 3fr;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;  
+    width: 100%;
+    max-height: 100px;
+    z-index: 1000;
+}
+.logo {
+    margin: 20px;
+}
+.logo img{
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 10px;
+} 
+.exercise {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    justify-content: space-between;
+    background-color: grey;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+
+}
+.exercise ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.exercise ul :last-child {
+    padding-right: 50px;
+}
+
+#exercise-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.exercise-card h2 {
+    padding-left: 10px;
+
+}
+.exercise-card :nth-child(2){
+    height: 200px;
+    font-size: 1.2em;
+
+}
+.exercise-card p {
+    font-size: 1em;
+    padding-left: 10px;
+
+}

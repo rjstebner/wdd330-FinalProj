@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PickupWorkout</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#main-header").load("partials/header.html"); 
+            $("#exercise-list").load("partials/exercise.html");
+            $("#main-footer").load("partials/footer.html");
+        });
+    </script>
+  </head>
+
+  <body>
+    <header class="divider" id="main-header">
+
+    </header>
+
+    <main class="divider" id="exercise-list"></main>
+
+
+    <footer id="main-footer"></footer>
+  </body>
+  <script src="../js/utils.mjs"></script>
+</html>
