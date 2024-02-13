@@ -61,7 +61,17 @@ nav ul li {
     margin-top: 100px;
 }
 
+.exercise-card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
 
+.exercise-card.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}
 .exercise-card h2 {
     padding-left: 10px;
 

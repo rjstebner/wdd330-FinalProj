@@ -22,7 +22,7 @@ window.onload = (function() {
     
 
 
-        filteredExercises.forEach((exercise) => {
+        filteredExercises.forEach((exercise, index) => {
             const card = document.createElement('div');
             card.className = 'exercise-card';
             
@@ -48,6 +48,10 @@ window.onload = (function() {
             card.appendChild(intensityElement);
 
             cards.appendChild(card);
+
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, (cards.childElementCount - 1) * 150); // Increase the delay for each card except the first one
 
             card.addEventListener('click', () => {
                 window.location.href = `./pages/product.html?name=${encodeURIComponent(exercise.name)}`;
