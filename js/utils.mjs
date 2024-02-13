@@ -10,16 +10,19 @@ window.onload = (function() {
             }
 
             const data = await response.json();
-            displayExercise(data.exercise);
-        }   catch (error) {
+            return data.exercise; // Return the data here
+        } catch (error) {
             console.error(`Error: ${error.message}`)
         }
     }
 
-    const displayExercise = (exercises) => {
-        const cards = document.querySelector(`#exercise-cards`);
-        cards.innerHTML ="";
-        exercises.forEach((exercise) => {
+    const displayExercise = (exercises, type) => {
+        cards.innerHTML = "";
+        const filteredExercises = type !== 'All' ? exercises.filter(exercise => exercise.type === type) : exercises;
+    
+
+
+        filteredExercises.forEach((exercise) => {
             const card = document.createElement('div');
             card.className = 'exercise-card';
 
@@ -43,10 +46,19 @@ window.onload = (function() {
             card.appendChild(lengthElement);
             card.appendChild(intensityElement);
 
-
             cards.appendChild(card);
         });
     };
-    getCardData();
-    
+
+    // Assuming your li elements have a class 'filter-option'
+    const filterOptions = document.querySelectorAll('.filter-option');
+
+    filterOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const selectedType = this.innerText; // or this.getAttribute('data-type') if you're storing the type in a data attribute
+            getCardData().then(data => displayExercise(data, selectedType));
+        });
+    });
+
+    getCardData().then(data => displayExercise(data, "All")); // Call displayExercise() here
 });
