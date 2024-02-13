@@ -5,142 +5,160 @@
         "type": "Cardio",
         "length": "10min",
         "intensity": "Medium",
-        "imageurl": "https://pixy.org/images/placeholder.png"
-        
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Push-ups",
         "type": "Calisthenics",
         "length": "15min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Yoga Stretch",
         "type": "Flexibility",
         "length": "30min",
         "intensity": "Low",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Running in Place",
         "type": "Cardio",
         "length": "5min",
         "intensity": "Medium",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Plank",
         "type": "Calisthenics",
         "length": "10min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Deep Breathing",
         "type": "Flexibility",
         "length": "15min",
         "intensity": "Low",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "High Knees",
         "type": "Cardio",
         "length": "10min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Bodyweight Squats",
         "type": "Calisthenics",
         "length": "15min",
         "intensity": "Medium",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Pilates Core Workout",
         "type": "Flexibility",
         "length": "30min",
         "intensity": "Low",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Burpees",
         "type": "Cardio",
         "length": "5min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Pull-ups",
         "type": "Calisthenics",
         "length": "10min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Dynamic Stretching",
         "type": "Flexibility",
         "length": "15min",
         "intensity": "Medium",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Jump Rope",
         "type": "Cardio",
         "length": "10min",
         "intensity": "Medium",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Dips",
         "type": "Calisthenics",
         "length": "15min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Tai Chi Flow",
         "type": "Flexibility",
         "length": "30min",
         "intensity": "Low",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Mountain Climbers",
         "type": "Cardio",
         "length": "5min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Lunges",
         "type": "Calisthenics",
         "length": "10min",
         "intensity": "Medium",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Sun Salutations",
         "type": "Flexibility",
         "length": "15min",
         "intensity": "Low",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Sprints",
         "type": "Cardio",
         "length": "10min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       },
       {
         "name": "Bodyweight Rows",
         "type": "Calisthenics",
         "length": "15min",
         "intensity": "High",
-        "imageurl": "https://pixy.org/images/placeholder.png"
+        "imageurl": "https://pixy.org/images/placeholder.png",
+        "videoUrl": "https://youtube.com/embed/NpEaa2P7qZI"
       }
     ]
   }
-  

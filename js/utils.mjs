@@ -50,7 +50,7 @@ window.onload = (function() {
             cards.appendChild(card);
 
             card.addEventListener('click', () => {
-                window.location.href = `./pages/product.html?name=${encodeURIComponent(exercise.name)}&type=${encodeURIComponent(exercise.type)}&length=${encodeURIComponent(exercise.length)}&intensity=${encodeURIComponent(exercise.intensity)}`;
+                window.location.href = `./pages/product.html?name=${encodeURIComponent(exercise.name)}`;
             });
         });
     };
