@@ -60,9 +60,7 @@ nav ul li {
     padding: 20px;
     margin-top: 100px;
 }
-.exercise-card * {
-    pointer-events: none;
-}
+
 
 .exercise-card h2 {
     padding-left: 10px;
@@ -77,4 +75,19 @@ nav ul li {
     font-size: 1em;
     padding-left: 10px;
 
+}
+
+/* Product Page */
+.exercise-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#exercise-name {
+    margin-top: 100px;
+}
+
+#exercise-video {
+    width: 90%;
+    aspect-ratio: 16/9;
 }
