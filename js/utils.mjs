@@ -25,6 +25,7 @@ window.onload = (function() {
         filteredExercises.forEach((exercise) => {
             const card = document.createElement('div');
             card.className = 'exercise-card';
+            
 
             const nameElement = document.createElement('h2');
             nameElement.textContent = exercise.name;
@@ -47,6 +48,10 @@ window.onload = (function() {
             card.appendChild(intensityElement);
 
             cards.appendChild(card);
+
+            card.addEventListener('click', () => {
+                window.location.href = `./pages/product.html?name=${encodeURIComponent(exercise.name)}&type=${encodeURIComponent(exercise.type)}&length=${encodeURIComponent(exercise.length)}&intensity=${encodeURIComponent(exercise.intensity)}`;
+            });
         });
     };
 
@@ -59,6 +64,5 @@ window.onload = (function() {
             getCardData().then(data => displayExercise(data, selectedType));
         });
     });
-
     getCardData().then(data => displayExercise(data, "All")); // Call displayExercise() here
 });

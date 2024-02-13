@@ -60,6 +60,9 @@ nav ul li {
     padding: 20px;
     margin-top: 100px;
 }
+.exercise-card * {
+    pointer-events: none;
+}
 
 .exercise-card h2 {
     padding-left: 10px;
