@@ -1,5 +1,6 @@
 window.onload = () => {
-    const url = '../data/exercises.json';   
+    const url = '../data/exercises.json';
+    const cards = document.querySelector('#favorite-exercise-cards');   
 
     
     let favorites = localStorage.getItem('favorites');
@@ -54,6 +55,36 @@ window.onload = () => {
 
             card.style.backgroundImage = `url(${favoriteExercises.imageurl})`;
             card.style.backgroundSize = '100% 100%';
+
+            let favButton = document.createElement('button');
+
+            favButton.addEventListener('click', (event) => {
+                event.stopPropagation();  // This prevents the card's click event from being triggered
+
+                let favorites = localStorage.getItem('favorites');
+                favorites = favorites ? JSON.parse(favorites) : [];
+
+                if (favorites.includes(favoriteExercises.name)) {
+                    // If the favoriteExercises is already a favorite, remove it
+                    favorites = favorites.filter(fav => fav !== favoriteExercises.name);
+                    favButton.textContent = 'Add to Favorites';
+
+                    // Remove the card from the page
+                    card.remove();
+                } else {
+                    // If the favoriteExercises is not a favorite, add it
+                    favorites.push(favoriteExercises.name);
+                    favButton.textContent = 'Remove from Favorites';
+                }
+
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
+
+
+
+
+            card.appendChild(favButton);
+
             
 
             card.appendChild(nameElement);

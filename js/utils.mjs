@@ -42,18 +42,31 @@ window.onload = (function() {
             card.style.backgroundImage = `url(${exercise.imageurl})`;
             card.style.backgroundSize = '100% 100%';
 
-            // Favorite button
-            const favButton = document.createElement('button');
+            let favButton = document.createElement('button');
             favButton.textContent = 'Add to Favorites';
+            // Favorite button
             favButton.addEventListener('click', (event) => {
                 event.stopPropagation();  // This prevents the card's click event from being triggered
-
+            
                 let favorites = localStorage.getItem('favorites');
                 favorites = favorites ? JSON.parse(favorites) : [];
-                favorites.push(exercise.name); // Use exercise.name instead of exercise.id
+            
+                if (favorites.includes(exercise.name)) {
+                    // If the exercise is already a favorite, remove it
+                    favorites = favorites.filter(fav => fav !== exercise.name);
+                    favButton.textContent = 'Add to Favorites';
+                } else {
+                    // If the exercise is not a favorite, add it
+                    favorites.push(exercise.name);
+                    favButton.textContent = 'Remove from Favorites';
+                }
+            
                 localStorage.setItem('favorites', JSON.stringify(favorites));
             });
-            card.appendChild(favButton);
+
+
+
+
             card.appendChild(favButton);
 
             card.appendChild(nameElement);
