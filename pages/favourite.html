@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PickupWorkout</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#main-header").load("partials/header.html"); 
+            $("#main-footer").load("partials/footer.html");
+        });
+    </script>
+  </head>
+
+  <body>
+    <header id="main-header"></header>
+    <h1>My Favorite Exercises</h1>
+
+    <div id="favorite-exercise-cards">
+        <!-- Favorite exercise cards will be added here by JavaScript -->
+    </div>
+
+    <p id="no-favorites-message" style="display: none;">
+        You haven't added any exercises to your favorites yet.
+    </p>
+
+    <footer id="main-footer"></footer>
+
+    <script src="../js/favourite.js"></script>
+</body>
+</html>

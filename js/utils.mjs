@@ -42,6 +42,20 @@ window.onload = (function() {
             card.style.backgroundImage = `url(${exercise.imageurl})`;
             card.style.backgroundSize = '100% 100%';
 
+            // Favorite button
+            const favButton = document.createElement('button');
+            favButton.textContent = 'Add to Favorites';
+            favButton.addEventListener('click', (event) => {
+                event.stopPropagation();  // This prevents the card's click event from being triggered
+
+                let favorites = localStorage.getItem('favorites');
+                favorites = favorites ? JSON.parse(favorites) : [];
+                favorites.push(exercise.name); // Use exercise.name instead of exercise.id
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
+            card.appendChild(favButton);
+            card.appendChild(favButton);
+
             card.appendChild(nameElement);
             card.appendChild(typeElement);
             card.appendChild(lengthElement);
