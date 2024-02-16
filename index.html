@@ -13,7 +13,6 @@
     <script>
         $(function(){
             $("#main-header").load("pages/partials/header.html"); 
-            $("#exercise-list").load("pages/partials/exercise.html");
             $("#main-footer").load("pages/partials/footer.html");
         });
     </script>
@@ -24,7 +23,22 @@
 
     </header>
 
-    <main class="divider" id="exercise-list"></main>
+    <div class="exercise">
+      <ul>
+          <li class="filter-option">All</li> 
+          <li class="filter-option">Cardio</li> 
+          <li class="filter-option">Calisthenics</li> 
+          <li class="filter-option">Flexibility</li>
+  
+      </ul>
+  </div>
+  <div class="search">
+      <form action="/product_pages/index.html" method="get">
+          <input type="text" name="search" placeholder="Search..." />
+          <input type="submit" value="Search">
+        </form>
+  </div>
+  <div id="exercise-cards"></div>
 
 
     <footer id="main-footer"></footer>
