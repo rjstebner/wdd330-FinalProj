@@ -13,6 +13,16 @@
     --p-font : 'Gothic A1', sans-serif;
 
 }
+
+body.dark-mode {
+    background-color: #222;
+}
+body.dark-mode header {
+    background-color: #222;
+}
+body.dark-mode footer{
+    color: var(--sec-colour);
+}
 h2 {
     font-family: var(--h-font);
     letter-spacing: 2px;
@@ -42,6 +52,15 @@ header a {
 }
 header a:hover {
     color: var(--tri-colour);
+}
+header button {
+    background-color: var(--sec-colour);
+    color: var(--a1-colour);
+    border: solid 1px var(--a1-colour);
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 .logo {
     margin: 20px;
@@ -77,6 +96,10 @@ nav ul li {
     margin: 10px;
 
 }
+body.dark-mode .exercise {
+    background-color: var(--a1-colour);
+    color: var(--sec-colour);
+}
 #selected-option{
     color: var(--pri-colour);
 }
@@ -97,6 +120,10 @@ nav ul li {
     color: var(--tri-colour);
     padding: 20px;
     margin: -20px;
+}
+body.dark-mode .exercise li:hover {
+    background-color: #222;
+    color: var(--sec-colour);
 }
 .exercise li:last-child:hover {
     padding-right: 60px;

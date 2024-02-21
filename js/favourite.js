@@ -1,3 +1,4 @@
+import darkModeToggle from '../js/utils.mjs';
 window.onload = () => {
     const url = '../data/exercises.json';
     const cards = document.querySelector('#favorite-exercise-cards');   
@@ -100,8 +101,9 @@ window.onload = () => {
             }, (container.childElementCount - 1) * 150); // Increase the delay for each card except the first one
 
             card.addEventListener('click', () => {
-                window.location.href = `./pages/product.html?name=${encodeURIComponent(exercise.name)}`;
+                window.location.href = `./product.html?name=${encodeURIComponent(favoriteExercises.name)}`;
             });
         });
     }
+    darkModeToggle();
 };
