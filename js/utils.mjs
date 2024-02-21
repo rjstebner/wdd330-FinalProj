@@ -88,9 +88,17 @@ window.onload = (function() {
 
     // Assuming your li elements have a class 'filter-option'
     const filterOptions = document.querySelectorAll('.filter-option');
+    let selectedOption = null;
 
     filterOptions.forEach(option => {
         option.addEventListener('click', function() {
+            if (selectedOption) {
+                selectedOption.removeAttribute('id');
+            }
+
+            selectedOption = this;
+            selectedOption.id = 'selected-option';
+
             const selectedType = this.innerText; // or this.getAttribute('data-type') if you're storing the type in a data attribute
             getCardData().then(data => displayExercise(data, selectedType));
         });

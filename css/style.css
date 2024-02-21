@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Paytone+One&display=swap');
+
+:root {
+    /*-- Colours --*/
+    --pri-colour : #E57025;
+    --sec-colour : #FFEEE2;
+    --tri-colour : #395C6B;
+    --a1-colour : #30011E;
+    --a2-colour : #ffffff;
+
+    /*-- Font --*/
+    --h-font : 'Paytone One', sans-serif;
+    --p-font : 'Gothic A1', sans-serif;
+
+}
+h2 {
+    font-family: var(--h-font);
+    letter-spacing: 2px;
+    -webkit-text-stroke: .2px var(--a1-colour);
+    color: var(--sec-colour);
+}
+p {
+    font-family: var(--p-font);
+    letter-spacing: 1px;
+    color: var(--a1-colour);
+}
 header {
     display: grid; 
     grid-template-columns: 1fr 3fr;
-    background-color: #fff;
+    background-color: var(--a2-colour);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -9,6 +35,13 @@ header {
     width: 100%;
     max-height: 100px;
     z-index: 1000;
+}
+header a {
+    text-decoration: none;
+    color: var(--pri-colour);
+}
+header a:hover {
+    color: var(--tri-colour);
 }
 .logo {
     margin: 20px;
@@ -37,11 +70,18 @@ nav ul li {
     top: 80px;
     right: 0;
     justify-content: space-between;
-    background-color: grey;
+    background-color: var(--sec-colour);
+    color: var(--a1-colour);
     width: 100%;
     align-items: center;
     margin: 10px;
 
+}
+#selected-option{
+    color: var(--pri-colour);
+}
+#selcted-option:hover {
+    color: var(--pri-colour);
 }
 .exercise ul {
     display: flex;
@@ -52,36 +92,62 @@ nav ul li {
 .exercise ul :last-child {
     padding-right: 50px;
 }
+.exercise li:hover {
+    background-color: var(--a2-colour);
+    color: var(--tri-colour);
+    padding: 20px;
+    margin: -20px;
+}
+.exercise li:last-child:hover {
+    padding-right: 60px;
+    margin-right: -10px;
+}
+
 
 #exercise-cards, #favorite-exercise-cards{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 40px;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 135px;
+}
+#exercise-cards button, #favorite-exercise-cards button {
+    position: relative;
+    left: 85%;
+    top: 3px;
+    color: var(--pri-colour);
+    background-color: var(--sec-colour);
+    border: solid 1px var(--a1-colour);
+    font-size: 1.2rem;
 }
 
-.exercise-card {
+
+#favorite-exercise-cards{
+    margin-top: 30px;
+}
+
+.exercise-card, .favorite-exercise-card {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     cursor: pointer;
 }
 
-.exercise-card.visible {
+.exercise-card.visible, .favorite-exercise-card.visible {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 
 }
-.exercise-card h2 {
+.exercise-card h2, .favorite-exercise-card h2{
     padding-left: 10px;
+    margin-top: -17px;
 
 }
-.exercise-card :nth-child(2){
+.exercise-card :nth-child(2), .favorite-exercise-card :nth-child(2){
     height: 200px;
     font-size: 1.2em;
 
 }
-.exercise-card p {
+.exercise-card p, .favorite-exercise-card p{
     font-size: 1em;
     padding-left: 10px;
 
@@ -100,4 +166,22 @@ nav ul li {
 #exercise-video {
     width: 90%;
     aspect-ratio: 16/9;
+}
+
+/* Contact Page */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-left: 10px;
+    max-width: 600px;
+}
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 80%;
+    }
+    input{
+        font-size: 1.2rem;
+    }
+    
 }
