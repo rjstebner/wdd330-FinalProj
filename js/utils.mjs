@@ -43,7 +43,7 @@ window.onload = (function() {
             card.style.backgroundSize = '100% 100%';
 
             let favButton = document.createElement('button');
-            favButton.textContent = 'Add to Favorites';
+            favButton.textContent = '+';
             // Favorite button
             favButton.addEventListener('click', (event) => {
                 event.stopPropagation();  // This prevents the card's click event from being triggered
@@ -54,11 +54,11 @@ window.onload = (function() {
                 if (favorites.includes(exercise.name)) {
                     // If the exercise is already a favorite, remove it
                     favorites = favorites.filter(fav => fav !== exercise.name);
-                    favButton.textContent = 'Add to Favorites';
+                    favButton.textContent = '+';
                 } else {
                     // If the exercise is not a favorite, add it
                     favorites.push(exercise.name);
-                    favButton.textContent = 'Remove from Favorites';
+                    favButton.textContent = '-';
                 }
             
                 localStorage.setItem('favorites', JSON.stringify(favorites));

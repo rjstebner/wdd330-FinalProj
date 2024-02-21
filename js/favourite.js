@@ -57,6 +57,7 @@ window.onload = () => {
             card.style.backgroundSize = '100% 100%';
 
             let favButton = document.createElement('button');
+            favButton.textContent = '-';
 
             favButton.addEventListener('click', (event) => {
                 event.stopPropagation();  // This prevents the card's click event from being triggered
@@ -67,14 +68,14 @@ window.onload = () => {
                 if (favorites.includes(favoriteExercises.name)) {
                     // If the favoriteExercises is already a favorite, remove it
                     favorites = favorites.filter(fav => fav !== favoriteExercises.name);
-                    favButton.textContent = 'Add to Favorites';
+                    favButton.textContent = '-';
 
                     // Remove the card from the page
                     card.remove();
                 } else {
                     // If the favoriteExercises is not a favorite, add it
                     favorites.push(favoriteExercises.name);
-                    favButton.textContent = 'Remove from Favorites';
+                    favButton.textContent = '-';
                 }
 
                 localStorage.setItem('favorites', JSON.stringify(favorites));
